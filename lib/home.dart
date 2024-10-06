@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: Column(
         children: [
-          Text('data'),
+          Text('івлдвлдфлдвф'),
           IconButton(
             onPressed: () {
               Navigator.push(
