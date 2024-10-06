@@ -17,7 +17,8 @@ class _HomeState extends State<Home> {
           Text('івлдвлдфлдвф'),
           IconButton(
             onPressed: () {
-              
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Second()));
             },
             icon: Icon(Icons.push_pin),
           ),
