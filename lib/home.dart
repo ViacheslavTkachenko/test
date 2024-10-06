@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test/second.dart';
+
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -10,6 +12,21 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Text('fhjfsj'),);
+    return Scaffold(
+      body: Column(
+        children: [
+          Text('івлдвлдфлдвф'),
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Second()));
+            },
+            icon: Icon(Icons.push_pin),
+          ),
+        ],
+      ),
+    );
   }
 }
+
+
