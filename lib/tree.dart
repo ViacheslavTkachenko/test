@@ -6,13 +6,21 @@ class Tree extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: IconButton(
-        onPressed: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => const Four()));
-        },
-        icon: Icon(Icons.abc),
+    return Scaffold(
+      body: Column(
+        children: [
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Four(),
+                ),
+              );
+            },
+            icon: Icon(Icons.next_plan),
+          ),
+        ],
       ),
     );
   }
